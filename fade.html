@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+div{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10%;
+            margin-top: 10%;
+            animation: color-change 3s infinite;
+        }
+
+        .fade {
+            height: 500px;
+            width: 500px;
+            /* background-color: rgb(228, 157, 14); */
+           background-image: url(https://img.pikbest.com/wp/202344/blur-color-vividly-blurred-texture-background-in-full_9930529.jpg!bw700);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 100px;
+            align-content: center;
+            margin: auto;
+            background-clip: text;
+            color: transparent;
+            border-color: 1px solid black;
+
+            animation: fade 4s ease infinite;
+        }
+
+        @keyframes fade {  
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 2;
+                background-image: url(https://img.pikbest.com/wp/202344/blur-color-vividly-blurred-texture-background-in-full_9930529.jpg!bw700);
+                background-position: center;
+                background-size: cover;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade" style="stroke-width: .015 ;">fade</div>
+</body>
+</html>
